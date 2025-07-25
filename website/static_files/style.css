@@ -1,0 +1,26 @@
+:root {
+    --primary: #BD3D3A;
+    --secondary: #120000;
+}
+
+.main {
+    width: 900px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: hidden;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+ul {
+	margin: .6em 0;
+}

@@ -1,7 +1,7 @@
 name = "uu-summerschool-2025"
 version = "0.1.0"
 keywords = ["math"]
-defaultTargets = ["UuSummerschool2025"]
+defaultTargets = ["UuSummerschool2025", "Site"]
 
 [leanOptions]
 pp.unicode.fun = true # pretty-prints `fun a ↦ b`
@@ -11,5 +11,21 @@ autoImplicit = false
 name = "mathlib"
 scope = "leanprover-community"
 
+[[require]]
+name = "verso"
+scope = "leanprover"
+rev = "v4.22.0-rc3"
+
 [[lean_lib]]
 name = "UuSummerschool2025"
+
+[[lean_lib]]
+name = "Site"
+srcDir = "website"
+roots = ["Site"]
+
+[[lean_exe]]
+name = "website"
+srcDir = "website"
+root = "Main"
+supportInterpreter = true
